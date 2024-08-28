@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo">
+                <img src="./assets/img/Logo-2.png" alt="logo Alura">
+            </div>
+            <div class="input-section">
+                <p id="confirmacion"></p>
+                <textarea id="text-area" class="text-area" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="note">
+                    <p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="button-group">
+                    <button onclick="encriptar();" class="encrypt-button">Encriptar!</button>
+                    <button onclick="desencriptar();" class="decrypt-button">Desencriptar!</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="right-panel-interno">
+                <p id="texto-resultado" class="resultado" hidden></p>
+                <div class="image-container">
+                    <img src="./assets/img/Muñeco.png" alt="Imagen de persona buscando" class="image">
+                </div>
+                <p class="message">Ningún mensaje fue encontrado</p>
+                <p class="sub-message">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <p id="mensajeCopiado" class="mensaje-copiado">¡Texto copiado!</p>
+                <button onclick="copiar();" class="btn-copiar-resultado" hidden>Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js" defer></script>
+</body>
+</html>
